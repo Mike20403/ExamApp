@@ -1,12 +1,17 @@
 require('dotenv').config()
 const express = require('express')
-
+const cors = require('cors')
 
 const connectDB = require('./src/db/connectDB')
 const app = new express()
 
-app.use('/', function(req, res)  {
-    res.send('ok')
+app.use(cors())
+
+app.use('/api', function(req, res)  {
+    res.json({
+        names: ['Hung', 'Khuong']
+    }
+ )
 })
 
 
