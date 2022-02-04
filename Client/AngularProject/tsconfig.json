@@ -28,5 +28,12 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
+  },
+   "compilerOptions": {
+    // ...rest of compiler options
+    "baseUrl":".",
+    "paths": {
+      "tslib" : ["D:/Chuyên Tin/ExamApp/Client/AngularProject/node_modules/tslib/tslib.d.ts"]
+    }
   }
 }
