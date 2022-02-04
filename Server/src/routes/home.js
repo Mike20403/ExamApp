@@ -1,10 +1,8 @@
 const express = require('express')
-const route = express.Router()
+const router = express.Router()
 
-route.get('/', function(req, res) {
-    res.json({
-        names: ['Hung', 'Khuong']   
-    })
-})
+const homeController = require('../controllers/homeController')
 
-module.exports = route
+router.get('/', homeController.temp)
+
+module.exports = router
