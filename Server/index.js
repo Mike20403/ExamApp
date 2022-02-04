@@ -5,14 +5,11 @@ const cors = require('cors')
 const connectDB = require('./src/db/connectDB')
 const app = new express()
 
+const initializeRoutes = require('./src/routes/')
+
 app.use(cors())
 
-app.use('/api', function(req, res)  {
-    res.json({
-        names: ['Hung', 'Khuong']
-    }
- )
-})
+initializeRoutes(app)
 
 
 const start = function() {
