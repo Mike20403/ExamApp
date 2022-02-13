@@ -1,4 +1,3 @@
-
 class loginAPIController {
     login(req, res) {
         res.json({

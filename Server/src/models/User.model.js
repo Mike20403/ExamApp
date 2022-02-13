@@ -15,9 +15,9 @@ const userSchema = new mongoose.Schema({
     classname: {
         type: String
     },
-    classId: {
-        type: mongoose.Types.ObjectId
-    },
+    // classId: {
+    //     type: mongoose.Types.ObjectId
+    // },
     isTeacher: {
         type: Boolean,
         default: false

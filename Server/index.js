@@ -8,6 +8,7 @@ const app = new express()
 const initializeRoutes = require('./src/routes/')
 
 app.use(cors())
+app.use(express.json())
 
 initializeRoutes(app)
 
