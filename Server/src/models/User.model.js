@@ -20,7 +20,8 @@ const userSchema = new mongoose.Schema({
     // },
     isTeacher: {
         type: Boolean,
-        default: false
+        default: false,
+        immutable: true
     },
 })
 
